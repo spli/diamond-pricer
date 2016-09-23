@@ -13,11 +13,7 @@ knit        : slidify::knit2slides
 
 ## Intro
 
-Diamond Pricer is a quick and easy application to price your diamonds based on their cut, colour and clarity built on Shiny and R technology using statistical modelling.
-
---- 
-
-## A quick look at the data
+Diamond Pricer is a quick and easy application to price your diamonds based on their cut, colour and clarity built on Shiny and R technology using statistical modelling. We use the diamonds dataset from ggplot2.
 
 ```{r data, echo=FALSE}
 library(ggplot2)
@@ -60,6 +56,4 @@ lm((log(price)) ~ I(carat^(1/3)) + carat + cut + clarity, data = diamonds)
 [https://spli.shinyapps.io/DiamondPricer/]
 
 Please click and give it a go!
-
----
 
