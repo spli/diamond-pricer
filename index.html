@@ -72,12 +72,10 @@
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Motivation</h2>
+    <h2>Getting the right price is very important</h2>
   </hgroup>
   <article data-timings="">
     <p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
-
-<h3>Getting the right price is very important</h3>
 
   </article>
   <!-- Presenter Notes -->
@@ -103,7 +101,7 @@
   <article data-timings="">
     <p>We fit the following model, taking into account relationship between carat and price:</p>
 
-<pre><code>lm((log(price)) ~ I(carat^(1/3)) + carat + cut + color, data = diamonds)
+<pre><code>lm((log(price)) ~ I(carat^(1/3)) + carat + cut + clarity, data = diamonds)
 </code></pre>
 
   </article>
@@ -148,7 +146,7 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Motivation'>
+        data-slide=3 title='Getting the right price is very important'>
          3
       </a>
     </li>

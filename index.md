@@ -32,11 +32,9 @@ Diamond Pricer is a quick and easy application to price your diamonds based on t
 
 --- 
 
-## Motivation
+## Getting the right price is very important
 
 ![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png)
-
-### Getting the right price is very important
 
 ---
 
@@ -53,7 +51,7 @@ Carat, clarity and cut are good predictors, and should be easy to fit a linear m
 We fit the following model, taking into account relationship between carat and price:
 
 ```
-lm((log(price)) ~ I(carat^(1/3)) + carat + cut + color, data = diamonds)
+lm((log(price)) ~ I(carat^(1/3)) + carat + cut + clarity, data = diamonds)
 ```
 
 ---
